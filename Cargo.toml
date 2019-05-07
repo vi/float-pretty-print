@@ -2,6 +2,13 @@
 name = "float-pretty-print"
 version = "0.1.0"
 authors = ["Vitaly _Vi Shukela <vi0oss@gmail.com>"]
-edition = "2018"
+description = "Format f64 for showing to user, not for serialisation"
+readme = "README.md"
+#msrv = "1.23"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/vi/float-pretty-print"
+keywords = ["float", "format", "pretty", "print", "human"]
+categories = ["text-processing"]
+exclude = ["*.pl", "*.txt"]
 
 [dependencies]
