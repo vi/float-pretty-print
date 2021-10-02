@@ -2372,9 +2372,9 @@ fn _just_opening_brace_onefour() {
 fn onefour_1() {
     assert_eq!(format!("{:1.4}", P(p("906792980000000"))), "9e14");
     assert_eq!(format!("{:1.4}", P(p("6390900000000"))), "6e12");
-    assert_eq!(format!("{:1.4}", P(p("28897000"))), "3e7");
-    assert_eq!(format!("{:1.4}", P(p("700000"))), "7e5");
-    assert_eq!(format!("{:1.4}", P(p("439620.1"))), "4e5");
+    assert_eq!(format!("{:1.4}", P(p("28897000"))), " 3e7");
+    assert_eq!(format!("{:1.4}", P(p("700000"))), " 7e5");
+    assert_eq!(format!("{:1.4}", P(p("439620.1"))), " 4e5");
     assert_eq!(format!("{:1.4}", P(p("9559.407"))), "9559");
     assert_eq!(format!("{:1.4}", P(p("8022.2"))), "8022");
     assert_eq!(format!("{:1.4}", P(p("6738.111"))), "6738");
@@ -2398,7 +2398,7 @@ fn onefour_1() {
     assert_eq!(format!("{:1.4}", P(p("24.48179"))), "24.5");
     assert_eq!(format!("{:1.4}", P(p("21.123"))), "21.1");
     assert_eq!(format!("{:1.4}", P(p("9.95016e+246"))), "#");
-    assert_eq!(format!("{:1.4}", P(p("9.8388"))), "9.8");
+    assert_eq!(format!("{:1.4}", P(p("9.8388"))), "9.84");
     assert_eq!(format!("{:1.4}", P(p("9.8059e+35"))), "1e36");
 }
 #[test]
@@ -2710,9 +2710,9 @@ fn _just_opening_brace_twofour() {
 fn twofour_1() {
     assert_eq!(format!("{:2.4}", P(p("906792980000000"))), "9e14");
     assert_eq!(format!("{:2.4}", P(p("6390900000000"))), "6e12");
-    assert_eq!(format!("{:2.4}", P(p("28897000"))), "3e7");
-    assert_eq!(format!("{:2.4}", P(p("700000"))), "7e5");
-    assert_eq!(format!("{:2.4}", P(p("439620.1"))), "4e5");
+    assert_eq!(format!("{:2.4}", P(p("28897000"))), " 3e7");
+    assert_eq!(format!("{:2.4}", P(p("700000"))), " 7e5");
+    assert_eq!(format!("{:2.4}", P(p("439620.1"))), " 4e5");
     assert_eq!(format!("{:2.4}", P(p("9559.407"))), "9559");
     assert_eq!(format!("{:2.4}", P(p("8022.2"))), "8022");
     assert_eq!(format!("{:2.4}", P(p("6738.111"))), "6738");
@@ -2736,7 +2736,7 @@ fn twofour_1() {
     assert_eq!(format!("{:2.4}", P(p("24.48179"))), "24.5");
     assert_eq!(format!("{:2.4}", P(p("21.123"))), "21.1");
     assert_eq!(format!("{:2.4}", P(p("9.95016e+246"))), "##");
-    assert_eq!(format!("{:2.4}", P(p("9.8388"))), "9.8");
+    assert_eq!(format!("{:2.4}", P(p("9.8388"))), "9.84");
     assert_eq!(format!("{:2.4}", P(p("9.8059e+35"))), "1e36");
 }
 #[test]
@@ -3048,9 +3048,9 @@ fn _just_opening_brace_threefour() {
 fn threefour_1() {
     assert_eq!(format!("{:3.4}", P(p("906792980000000"))), "9e14");
     assert_eq!(format!("{:3.4}", P(p("6390900000000"))), "6e12");
-    assert_eq!(format!("{:3.4}", P(p("28897000"))), "3e7");
-    assert_eq!(format!("{:3.4}", P(p("700000"))), "7e5");
-    assert_eq!(format!("{:3.4}", P(p("439620.1"))), "4e5");
+    assert_eq!(format!("{:3.4}", P(p("28897000"))), " 3e7");
+    assert_eq!(format!("{:3.4}", P(p("700000"))), " 7e5");
+    assert_eq!(format!("{:3.4}", P(p("439620.1"))), " 4e5");
     assert_eq!(format!("{:3.4}", P(p("9559.407"))), "9559");
     assert_eq!(format!("{:3.4}", P(p("8022.2"))), "8022");
     assert_eq!(format!("{:3.4}", P(p("6738.111"))), "6738");
@@ -3074,7 +3074,7 @@ fn threefour_1() {
     assert_eq!(format!("{:3.4}", P(p("24.48179"))), "24.5");
     assert_eq!(format!("{:3.4}", P(p("21.123"))), "21.1");
     assert_eq!(format!("{:3.4}", P(p("9.95016e+246"))), "###");
-    assert_eq!(format!("{:3.4}", P(p("9.8388"))), "9.8");
+    assert_eq!(format!("{:3.4}", P(p("9.8388"))), "9.84");
     assert_eq!(format!("{:3.4}", P(p("9.8059e+35"))), "1e36");
 }
 #[test]
@@ -3386,9 +3386,9 @@ fn _just_opening_brace_four() {
 fn four_1() {
     assert_eq!(format!("{:4.4}", P(p("906792980000000"))), "9e14");
     assert_eq!(format!("{:4.4}", P(p("6390900000000"))), "6e12");
-    assert_eq!(format!("{:4.4}", P(p("28897000"))), "3e7");
-    assert_eq!(format!("{:4.4}", P(p("700000"))), "7e5");
-    assert_eq!(format!("{:4.4}", P(p("439620.1"))), "4e5");
+    assert_eq!(format!("{:4.4}", P(p("28897000"))), " 3e7");
+    assert_eq!(format!("{:4.4}", P(p("700000"))), " 7e5");
+    assert_eq!(format!("{:4.4}", P(p("439620.1"))), " 4e5");
     assert_eq!(format!("{:4.4}", P(p("9559.407"))), "9559");
     assert_eq!(format!("{:4.4}", P(p("8022.2"))), "8022");
     assert_eq!(format!("{:4.4}", P(p("6738.111"))), "6738");
@@ -3412,7 +3412,7 @@ fn four_1() {
     assert_eq!(format!("{:4.4}", P(p("24.48179"))), "24.5");
     assert_eq!(format!("{:4.4}", P(p("21.123"))), "21.1");
     assert_eq!(format!("{:4.4}", P(p("9.95016e+246"))), "####");
-    assert_eq!(format!("{:4.4}", P(p("9.8388"))), "9.8");
+    assert_eq!(format!("{:4.4}", P(p("9.8388"))), "9.84");
     assert_eq!(format!("{:4.4}", P(p("9.8059e+35"))), "1e36");
 }
 #[test]
@@ -3722,8 +3722,8 @@ fn _just_opening_brace_five() {
 }
 #[test]
 fn five_1() {
-    assert_eq!(format!("{:5.5}", P(p("906792980000000"))), "9e14");
-    assert_eq!(format!("{:5.5}", P(p("6390900000000"))), "6e12");
+    assert_eq!(format!("{:5.5}", P(p("906792980000000"))), " 9e14");
+    assert_eq!(format!("{:5.5}", P(p("6390900000000"))), " 6e12");
     assert_eq!(format!("{:5.5}", P(p("28897000"))), "2.9e7");
     assert_eq!(format!("{:5.5}", P(p("700000"))), "7.0e5");
     assert_eq!(format!("{:5.5}", P(p("439620.1"))), "4.4e5");
@@ -3750,40 +3750,40 @@ fn five_1() {
     assert_eq!(format!("{:5.5}", P(p("24.48179"))), "24.48");
     assert_eq!(format!("{:5.5}", P(p("21.123"))), "21.12");
     assert_eq!(format!("{:5.5}", P(p("9.95016e+246"))), "1e247");
-    assert_eq!(format!("{:5.5}", P(p("9.8388"))), "9.84");
-    assert_eq!(format!("{:5.5}", P(p("9.8059e+35"))), "1e36");
+    assert_eq!(format!("{:5.5}", P(p("9.8388"))), "9.839");
+    assert_eq!(format!("{:5.5}", P(p("9.8059e+35"))), " 1e36");
 }
 #[test]
 fn five_2() {
-    assert_eq!(format!("{:5.5}", P(p("9.530609e+22"))), "1e23");
-    assert_eq!(format!("{:5.5}", P(p("9.46e+35"))), "9e35");
+    assert_eq!(format!("{:5.5}", P(p("9.530609e+22"))), " 1e23");
+    assert_eq!(format!("{:5.5}", P(p("9.46e+35"))), " 9e35");
     assert_eq!(format!("{:5.5}", P(p("9.452105e-31"))), "9e-31");
     assert_eq!(format!("{:5.5}", P(p("9e+115"))), "9e115");
-    assert_eq!(format!("{:5.5}", P(p("8.785953e+42"))), "9e42");
-    assert_eq!(format!("{:5.5}", P(p("8.5e+20"))), "8e20");
-    assert_eq!(format!("{:5.5}", P(p("8.3536e+30"))), "8e30");
-    assert_eq!(format!("{:5.5}", P(p("8.3439e+25"))), "8e25");
+    assert_eq!(format!("{:5.5}", P(p("8.785953e+42"))), " 9e42");
+    assert_eq!(format!("{:5.5}", P(p("8.5e+20"))), " 8e20");
+    assert_eq!(format!("{:5.5}", P(p("8.3536e+30"))), " 8e30");
+    assert_eq!(format!("{:5.5}", P(p("8.3439e+25"))), " 8e25");
     assert_eq!(format!("{:5.5}", P(p("8.27203e-18"))), "8e-18");
     assert_eq!(format!("{:5.5}", P(p("8.271221e-219"))), "    0");
     assert_eq!(format!("{:5.5}", P(p("8.0927985e-112"))), "    0");
     assert_eq!(format!("{:5.5}", P(p("8.07e-53"))), "8e-53");
-    assert_eq!(format!("{:5.5}", P(p("8.062352e+38"))), "8e38");
-    assert_eq!(format!("{:5.5}", P(p("8.0159e+36"))), "8e36");
-    assert_eq!(format!("{:5.5}", P(p("8e+29"))), "8e29");
+    assert_eq!(format!("{:5.5}", P(p("8.062352e+38"))), " 8e38");
+    assert_eq!(format!("{:5.5}", P(p("8.0159e+36"))), " 8e36");
+    assert_eq!(format!("{:5.5}", P(p("8e+29"))), " 8e29");
     assert_eq!(format!("{:5.5}", P(p("8e-24"))), "8e-24");
     assert_eq!(format!("{:5.5}", P(p("7.9954287e-194"))), "    0");
     assert_eq!(format!("{:5.5}", P(p("7.83472e-22"))), "8e-22");
     assert_eq!(format!("{:5.5}", P(p("7.814"))), "7.814");
-    assert_eq!(format!("{:5.5}", P(p("7.7715e+27"))), "8e27");
-    assert_eq!(format!("{:5.5}", P(p("7.509e+38"))), "8e38");
+    assert_eq!(format!("{:5.5}", P(p("7.7715e+27"))), " 8e27");
+    assert_eq!(format!("{:5.5}", P(p("7.509e+38"))), " 8e38");
     assert_eq!(format!("{:5.5}", P(p("7.331e-31"))), "7e-31");
     assert_eq!(format!("{:5.5}", P(p("7.2401e+226"))), "7e226");
     assert_eq!(format!("{:5.5}", P(p("7.2193e-18"))), "7e-18");
-    assert_eq!(format!("{:5.5}", P(p("7.2e+19"))), "7e19");
+    assert_eq!(format!("{:5.5}", P(p("7.2e+19"))), " 7e19");
     assert_eq!(format!("{:5.5}", P(p("7.142849e-170"))), "    0");
     assert_eq!(format!("{:5.5}", P(p("7.0676e-17"))), "7e-17");
-    assert_eq!(format!("{:5.5}", P(p("7e+39"))), "7e39");
-    assert_eq!(format!("{:5.5}", P(p("7e+28"))), "7e28");
+    assert_eq!(format!("{:5.5}", P(p("7e+39"))), " 7e39");
+    assert_eq!(format!("{:5.5}", P(p("7e+28"))), " 7e28");
     assert_eq!(format!("{:5.5}", P(p("7"))), "7.000");
 }
 #[test]
@@ -3791,22 +3791,22 @@ fn five_3() {
     assert_eq!(format!("{:5.5}", P(p("6.844e+113"))), "7e113");
     assert_eq!(format!("{:5.5}", P(p("6.7853e-21"))), "7e-21");
     assert_eq!(format!("{:5.5}", P(p("6.75e-27"))), "7e-27");
-    assert_eq!(format!("{:5.5}", P(p("6.56e+39"))), "7e39");
+    assert_eq!(format!("{:5.5}", P(p("6.56e+39"))), " 7e39");
     assert_eq!(format!("{:5.5}", P(p("6.540688e-10"))), "7e-10");
-    assert_eq!(format!("{:5.5}", P(p("6.4e-08"))), "6e-8");
+    assert_eq!(format!("{:5.5}", P(p("6.4e-08"))), " 6e-8");
     assert_eq!(format!("{:5.5}", P(p("6.389785e-262"))), "    0");
-    assert_eq!(format!("{:5.5}", P(p("6.3508e+42"))), "6e42");
-    assert_eq!(format!("{:5.5}", P(p("6.3383e+47"))), "6e47");
-    assert_eq!(format!("{:5.5}", P(p("6.295e+53"))), "6e53");
+    assert_eq!(format!("{:5.5}", P(p("6.3508e+42"))), " 6e42");
+    assert_eq!(format!("{:5.5}", P(p("6.3383e+47"))), " 6e47");
+    assert_eq!(format!("{:5.5}", P(p("6.295e+53"))), " 6e53");
     assert_eq!(format!("{:5.5}", P(p("6.049"))), "6.049");
     assert_eq!(format!("{:5.5}", P(p("6.04"))), "6.040");
     assert_eq!(format!("{:5.5}", P(p("6.01341e-20"))), "6e-20");
-    assert_eq!(format!("{:5.5}", P(p("5.98e+28"))), "6e28");
-    assert_eq!(format!("{:5.5}", P(p("5.9e+43"))), "6e43");
+    assert_eq!(format!("{:5.5}", P(p("5.98e+28"))), " 6e28");
+    assert_eq!(format!("{:5.5}", P(p("5.9e+43"))), " 6e43");
     assert_eq!(format!("{:5.5}", P(p("5.865"))), "5.865");
     assert_eq!(format!("{:5.5}", P(p("5.7e-26"))), "6e-26");
-    assert_eq!(format!("{:5.5}", P(p("5.695e-09"))), "6e-9");
-    assert_eq!(format!("{:5.5}", P(p("5.61e-07"))), "6e-7");
+    assert_eq!(format!("{:5.5}", P(p("5.695e-09"))), " 6e-9");
+    assert_eq!(format!("{:5.5}", P(p("5.61e-07"))), " 6e-7");
     assert_eq!(format!("{:5.5}", P(p("5.55971e-235"))), "    0");
     assert_eq!(format!("{:5.5}", P(p("5.4541311e-10"))), "5e-10");
     assert_eq!(format!("{:5.5}", P(p("5.1415063e-11"))), "5e-11");
@@ -3814,43 +3814,43 @@ fn five_3() {
     assert_eq!(format!("{:5.5}", P(p("5.0369e+172"))), "5e172");
     assert_eq!(format!("{:5.5}", P(p("5.003824e+151"))), "5e151");
     assert_eq!(format!("{:5.5}", P(p("5e+263"))), "5e263");
-    assert_eq!(format!("{:5.5}", P(p("5e+24"))), "5e24");
-    assert_eq!(format!("{:5.5}", P(p("5e+19"))), "5e19");
+    assert_eq!(format!("{:5.5}", P(p("5e+24"))), " 5e24");
+    assert_eq!(format!("{:5.5}", P(p("5e+19"))), " 5e19");
     assert_eq!(format!("{:5.5}", P(p("5e+133"))), "5e133");
-    assert_eq!(format!("{:5.5}", P(p("4.937e+40"))), "5e40");
+    assert_eq!(format!("{:5.5}", P(p("4.937e+40"))), " 5e40");
 }
 #[test]
 fn five_4() {
     assert_eq!(format!("{:5.5}", P(p("4.9361647e-133"))), "    0");
-    assert_eq!(format!("{:5.5}", P(p("4.585e+48"))), "5e48");
-    assert_eq!(format!("{:5.5}", P(p("4.49e+26"))), "4e26");
+    assert_eq!(format!("{:5.5}", P(p("4.585e+48"))), " 5e48");
+    assert_eq!(format!("{:5.5}", P(p("4.49e+26"))), " 4e26");
     assert_eq!(format!("{:5.5}", P(p("4.4177e-134"))), "    0");
     assert_eq!(format!("{:5.5}", P(p("4.3e-245"))), "    0");
     assert_eq!(format!("{:5.5}", P(p("4.3e-16"))), "4e-16");
     assert_eq!(format!("{:5.5}", P(p("3.452077e-191"))), "    0");
     assert_eq!(format!("{:5.5}", P(p("3.2"))), "3.200");
-    assert_eq!(format!("{:5.5}", P(p("3e+25"))), "3e25");
+    assert_eq!(format!("{:5.5}", P(p("3e+25"))), " 3e25");
     assert_eq!(format!("{:5.5}", P(p("3e+149"))), "3e149");
-    assert_eq!(format!("{:5.5}", P(p("2.93e+32"))), "3e32");
-    assert_eq!(format!("{:5.5}", P(p("2.916861e+44"))), "3e44");
+    assert_eq!(format!("{:5.5}", P(p("2.93e+32"))), " 3e32");
+    assert_eq!(format!("{:5.5}", P(p("2.916861e+44"))), " 3e44");
     assert_eq!(format!("{:5.5}", P(p("2.9"))), "2.900");
     assert_eq!(format!("{:5.5}", P(p("2.764e-83"))), "3e-83");
-    assert_eq!(format!("{:5.5}", P(p("2.49279e+34"))), "2e34");
+    assert_eq!(format!("{:5.5}", P(p("2.49279e+34"))), " 2e34");
     assert_eq!(format!("{:5.5}", P(p("2.413e-15"))), "2e-15");
     assert_eq!(format!("{:5.5}", P(p("2.2353e-129"))), "    0");
     assert_eq!(format!("{:5.5}", P(p("2.166819e-23"))), "2e-23");
-    assert_eq!(format!("{:5.5}", P(p("2e+31"))), "2e31");
+    assert_eq!(format!("{:5.5}", P(p("2e+31"))), " 2e31");
     assert_eq!(format!("{:5.5}", P(p("2e+116"))), "2e116");
-    assert_eq!(format!("{:5.5}", P(p("1.8e+33"))), "2e33");
+    assert_eq!(format!("{:5.5}", P(p("1.8e+33"))), " 2e33");
     assert_eq!(format!("{:5.5}", P(p("1.7e-13"))), "2e-13");
-    assert_eq!(format!("{:5.5}", P(p("1.4580931e+62"))), "1e62");
-    assert_eq!(format!("{:5.5}", P(p("1.44471e-07"))), "1e-7");
-    assert_eq!(format!("{:5.5}", P(p("1.393237e+46"))), "1e46");
+    assert_eq!(format!("{:5.5}", P(p("1.4580931e+62"))), " 1e62");
+    assert_eq!(format!("{:5.5}", P(p("1.44471e-07"))), " 1e-7");
+    assert_eq!(format!("{:5.5}", P(p("1.393237e+46"))), " 1e46");
     assert_eq!(format!("{:5.5}", P(p("1.39e+295"))), "1e295");
-    assert_eq!(format!("{:5.5}", P(p("1.375e+17"))), "1e17");
-    assert_eq!(format!("{:5.5}", P(p("1.293e+27"))), "1e27");
+    assert_eq!(format!("{:5.5}", P(p("1.375e+17"))), " 1e17");
+    assert_eq!(format!("{:5.5}", P(p("1.293e+27"))), " 1e27");
     assert_eq!(format!("{:5.5}", P(p("1.2041e-21"))), "1e-21");
-    assert_eq!(format!("{:5.5}", P(p("1e+48"))), "1e48");
+    assert_eq!(format!("{:5.5}", P(p("1e+48"))), " 1e48");
 }
 #[test]
 fn five_5() {
@@ -3881,16 +3881,16 @@ fn five_5() {
     assert_eq!(format!("{:5.5}", P(p("0.0029071"))), "0.003");
     assert_eq!(format!("{:5.5}", P(p("0.002191249"))), "0.002");
     assert_eq!(format!("{:5.5}", P(p("0.001910066"))), "0.002");
-    assert_eq!(format!("{:5.5}", P(p("0.00092769"))), "9e-4");
-    assert_eq!(format!("{:5.5}", P(p("0.0004"))), "4e-4");
-    assert_eq!(format!("{:5.5}", P(p("0.000383036"))), "4e-4");
+    assert_eq!(format!("{:5.5}", P(p("0.00092769"))), " 9e-4");
+    assert_eq!(format!("{:5.5}", P(p("0.0004"))), " 4e-4");
+    assert_eq!(format!("{:5.5}", P(p("0.000383036"))), " 4e-4");
 }
 #[test]
 fn five_6() {
-    assert_eq!(format!("{:5.5}", P(p("0.0003"))), "3e-4");
-    assert_eq!(format!("{:5.5}", P(p("0.000188222"))), "2e-4");
-    assert_eq!(format!("{:5.5}", P(p("0.00016"))), "2e-4");
-    assert_eq!(format!("{:5.5}", P(p("0.00014834"))), "1e-4");
+    assert_eq!(format!("{:5.5}", P(p("0.0003"))), " 3e-4");
+    assert_eq!(format!("{:5.5}", P(p("0.000188222"))), " 2e-4");
+    assert_eq!(format!("{:5.5}", P(p("0.00016"))), " 2e-4");
+    assert_eq!(format!("{:5.5}", P(p("0.00014834"))), " 1e-4");
     assert_eq!(format!("{:5.5}", P(p("NaN"))), "NaN  ");
     assert_eq!(format!("{:5.5}", P(p("-inf"))), "-inf ");
     assert_eq!(format!("{:5.5}", P(p("inf"))), "inf  ");
@@ -4045,14 +4045,14 @@ fn five_10() {
     assert_eq!(format!("{:5.5}", P(p("-5469.471"))), "-5469");
     assert_eq!(format!("{:5.5}", P(p("-5651.6809"))), "-5652");
     assert_eq!(format!("{:5.5}", P(p("-9706.81"))), "-9707");
-    assert_eq!(format!("{:5.5}", P(p("-93500"))), "-9e4");
-    assert_eq!(format!("{:5.5}", P(p("-577000"))), "-6e5");
-    assert_eq!(format!("{:5.5}", P(p("-835534"))), "-8e5");
-    assert_eq!(format!("{:5.5}", P(p("-6000000"))), "-6e6");
+    assert_eq!(format!("{:5.5}", P(p("-93500"))), " -9e4");
+    assert_eq!(format!("{:5.5}", P(p("-577000"))), " -6e5");
+    assert_eq!(format!("{:5.5}", P(p("-835534"))), " -8e5");
+    assert_eq!(format!("{:5.5}", P(p("-6000000"))), " -6e6");
 }
 #[test]
 fn five_11() {
-    assert_eq!(format!("{:5.5}", P(p("-900000000"))), "-9e8");
+    assert_eq!(format!("{:5.5}", P(p("-900000000"))), " -9e8");
     assert_eq!(format!("{:5.5}", P(p("-279358770000"))), "-3e11");
     assert_eq!(format!("{:5.5}", P(p("-50000000000000"))), "-5e13");
 }
@@ -4087,50 +4087,50 @@ fn six_1() {
     assert_eq!(format!("{:6.6}", P(p("30"))), "30.000");
     assert_eq!(format!("{:6.6}", P(p("24.48179"))), "24.482");
     assert_eq!(format!("{:6.6}", P(p("21.123"))), "21.123");
-    assert_eq!(format!("{:6.6}", P(p("9.95016e+246"))), "1e247");
-    assert_eq!(format!("{:6.6}", P(p("9.8388"))), "9.839");
+    assert_eq!(format!("{:6.6}", P(p("9.95016e+246"))), " 1e247");
+    assert_eq!(format!("{:6.6}", P(p("9.8388"))), "9.8388");
     assert_eq!(format!("{:6.6}", P(p("9.8059e+35"))), "9.8e35");
 }
 #[test]
 fn six_2() {
     assert_eq!(format!("{:6.6}", P(p("9.530609e+22"))), "9.5e22");
     assert_eq!(format!("{:6.6}", P(p("9.46e+35"))), "9.5e35");
-    assert_eq!(format!("{:6.6}", P(p("9.452105e-31"))), "9e-31");
-    assert_eq!(format!("{:6.6}", P(p("9e+115"))), "9e115");
+    assert_eq!(format!("{:6.6}", P(p("9.452105e-31"))), " 9e-31");
+    assert_eq!(format!("{:6.6}", P(p("9e+115"))), " 9e115");
     assert_eq!(format!("{:6.6}", P(p("8.785953e+42"))), "8.8e42");
     assert_eq!(format!("{:6.6}", P(p("8.5e+20"))), "8.5e20");
     assert_eq!(format!("{:6.6}", P(p("8.3536e+30"))), "8.4e30");
     assert_eq!(format!("{:6.6}", P(p("8.3439e+25"))), "8.3e25");
-    assert_eq!(format!("{:6.6}", P(p("8.27203e-18"))), "8e-18");
+    assert_eq!(format!("{:6.6}", P(p("8.27203e-18"))), " 8e-18");
     assert_eq!(format!("{:6.6}", P(p("8.271221e-219"))), "8e-219");
     assert_eq!(format!("{:6.6}", P(p("8.0927985e-112"))), "8e-112");
-    assert_eq!(format!("{:6.6}", P(p("8.07e-53"))), "8e-53");
+    assert_eq!(format!("{:6.6}", P(p("8.07e-53"))), " 8e-53");
     assert_eq!(format!("{:6.6}", P(p("8.062352e+38"))), "8.1e38");
     assert_eq!(format!("{:6.6}", P(p("8.0159e+36"))), "8.0e36");
     assert_eq!(format!("{:6.6}", P(p("8e+29"))), "8.0e29");
-    assert_eq!(format!("{:6.6}", P(p("8e-24"))), "8e-24");
+    assert_eq!(format!("{:6.6}", P(p("8e-24"))), " 8e-24");
     assert_eq!(format!("{:6.6}", P(p("7.9954287e-194"))), "8e-194");
-    assert_eq!(format!("{:6.6}", P(p("7.83472e-22"))), "8e-22");
+    assert_eq!(format!("{:6.6}", P(p("7.83472e-22"))), " 8e-22");
     assert_eq!(format!("{:6.6}", P(p("7.814"))), "7.8140");
     assert_eq!(format!("{:6.6}", P(p("7.7715e+27"))), "7.8e27");
     assert_eq!(format!("{:6.6}", P(p("7.509e+38"))), "7.5e38");
-    assert_eq!(format!("{:6.6}", P(p("7.331e-31"))), "7e-31");
-    assert_eq!(format!("{:6.6}", P(p("7.2401e+226"))), "7e226");
-    assert_eq!(format!("{:6.6}", P(p("7.2193e-18"))), "7e-18");
+    assert_eq!(format!("{:6.6}", P(p("7.331e-31"))), " 7e-31");
+    assert_eq!(format!("{:6.6}", P(p("7.2401e+226"))), " 7e226");
+    assert_eq!(format!("{:6.6}", P(p("7.2193e-18"))), " 7e-18");
     assert_eq!(format!("{:6.6}", P(p("7.2e+19"))), "7.2e19");
     assert_eq!(format!("{:6.6}", P(p("7.142849e-170"))), "7e-170");
-    assert_eq!(format!("{:6.6}", P(p("7.0676e-17"))), "7e-17");
+    assert_eq!(format!("{:6.6}", P(p("7.0676e-17"))), " 7e-17");
     assert_eq!(format!("{:6.6}", P(p("7e+39"))), "7.0e39");
     assert_eq!(format!("{:6.6}", P(p("7e+28"))), "7.0e28");
     assert_eq!(format!("{:6.6}", P(p("7"))), "7.0000");
 }
 #[test]
 fn six_3() {
-    assert_eq!(format!("{:6.6}", P(p("6.844e+113"))), "7e113");
-    assert_eq!(format!("{:6.6}", P(p("6.7853e-21"))), "7e-21");
-    assert_eq!(format!("{:6.6}", P(p("6.75e-27"))), "7e-27");
+    assert_eq!(format!("{:6.6}", P(p("6.844e+113"))), " 7e113");
+    assert_eq!(format!("{:6.6}", P(p("6.7853e-21"))), " 7e-21");
+    assert_eq!(format!("{:6.6}", P(p("6.75e-27"))), " 7e-27");
     assert_eq!(format!("{:6.6}", P(p("6.56e+39"))), "6.6e39");
-    assert_eq!(format!("{:6.6}", P(p("6.540688e-10"))), "7e-10");
+    assert_eq!(format!("{:6.6}", P(p("6.540688e-10"))), " 7e-10");
     assert_eq!(format!("{:6.6}", P(p("6.4e-08"))), "6.4e-8");
     assert_eq!(format!("{:6.6}", P(p("6.389785e-262"))), "6e-262");
     assert_eq!(format!("{:6.6}", P(p("6.3508e+42"))), "6.4e42");
@@ -4138,23 +4138,23 @@ fn six_3() {
     assert_eq!(format!("{:6.6}", P(p("6.295e+53"))), "6.3e53");
     assert_eq!(format!("{:6.6}", P(p("6.049"))), "6.0490");
     assert_eq!(format!("{:6.6}", P(p("6.04"))), "6.0400");
-    assert_eq!(format!("{:6.6}", P(p("6.01341e-20"))), "6e-20");
+    assert_eq!(format!("{:6.6}", P(p("6.01341e-20"))), " 6e-20");
     assert_eq!(format!("{:6.6}", P(p("5.98e+28"))), "6.0e28");
     assert_eq!(format!("{:6.6}", P(p("5.9e+43"))), "5.9e43");
     assert_eq!(format!("{:6.6}", P(p("5.865"))), "5.8650");
-    assert_eq!(format!("{:6.6}", P(p("5.7e-26"))), "6e-26");
+    assert_eq!(format!("{:6.6}", P(p("5.7e-26"))), " 6e-26");
     assert_eq!(format!("{:6.6}", P(p("5.695e-09"))), "5.7e-9");
     assert_eq!(format!("{:6.6}", P(p("5.61e-07"))), "5.6e-7");
     assert_eq!(format!("{:6.6}", P(p("5.55971e-235"))), "6e-235");
-    assert_eq!(format!("{:6.6}", P(p("5.4541311e-10"))), "5e-10");
-    assert_eq!(format!("{:6.6}", P(p("5.1415063e-11"))), "5e-11");
-    assert_eq!(format!("{:6.6}", P(p("5.13e+282"))), "5e282");
-    assert_eq!(format!("{:6.6}", P(p("5.0369e+172"))), "5e172");
-    assert_eq!(format!("{:6.6}", P(p("5.003824e+151"))), "5e151");
-    assert_eq!(format!("{:6.6}", P(p("5e+263"))), "5e263");
+    assert_eq!(format!("{:6.6}", P(p("5.4541311e-10"))), " 5e-10");
+    assert_eq!(format!("{:6.6}", P(p("5.1415063e-11"))), " 5e-11");
+    assert_eq!(format!("{:6.6}", P(p("5.13e+282"))), " 5e282");
+    assert_eq!(format!("{:6.6}", P(p("5.0369e+172"))), " 5e172");
+    assert_eq!(format!("{:6.6}", P(p("5.003824e+151"))), " 5e151");
+    assert_eq!(format!("{:6.6}", P(p("5e+263"))), " 5e263");
     assert_eq!(format!("{:6.6}", P(p("5e+24"))), "5.0e24");
     assert_eq!(format!("{:6.6}", P(p("5e+19"))), "5.0e19");
-    assert_eq!(format!("{:6.6}", P(p("5e+133"))), "5e133");
+    assert_eq!(format!("{:6.6}", P(p("5e+133"))), " 5e133");
     assert_eq!(format!("{:6.6}", P(p("4.937e+40"))), "4.9e40");
 }
 #[test]
@@ -4164,30 +4164,30 @@ fn six_4() {
     assert_eq!(format!("{:6.6}", P(p("4.49e+26"))), "4.5e26");
     assert_eq!(format!("{:6.6}", P(p("4.4177e-134"))), "4e-134");
     assert_eq!(format!("{:6.6}", P(p("4.3e-245"))), "4e-245");
-    assert_eq!(format!("{:6.6}", P(p("4.3e-16"))), "4e-16");
+    assert_eq!(format!("{:6.6}", P(p("4.3e-16"))), " 4e-16");
     assert_eq!(format!("{:6.6}", P(p("3.452077e-191"))), "3e-191");
     assert_eq!(format!("{:6.6}", P(p("3.2"))), "3.2000");
     assert_eq!(format!("{:6.6}", P(p("3e+25"))), "3.0e25");
-    assert_eq!(format!("{:6.6}", P(p("3e+149"))), "3e149");
+    assert_eq!(format!("{:6.6}", P(p("3e+149"))), " 3e149");
     assert_eq!(format!("{:6.6}", P(p("2.93e+32"))), "2.9e32");
     assert_eq!(format!("{:6.6}", P(p("2.916861e+44"))), "2.9e44");
     assert_eq!(format!("{:6.6}", P(p("2.9"))), "2.9000");
-    assert_eq!(format!("{:6.6}", P(p("2.764e-83"))), "3e-83");
+    assert_eq!(format!("{:6.6}", P(p("2.764e-83"))), " 3e-83");
     assert_eq!(format!("{:6.6}", P(p("2.49279e+34"))), "2.5e34");
-    assert_eq!(format!("{:6.6}", P(p("2.413e-15"))), "2e-15");
+    assert_eq!(format!("{:6.6}", P(p("2.413e-15"))), " 2e-15");
     assert_eq!(format!("{:6.6}", P(p("2.2353e-129"))), "2e-129");
-    assert_eq!(format!("{:6.6}", P(p("2.166819e-23"))), "2e-23");
+    assert_eq!(format!("{:6.6}", P(p("2.166819e-23"))), " 2e-23");
     assert_eq!(format!("{:6.6}", P(p("2e+31"))), "2.0e31");
-    assert_eq!(format!("{:6.6}", P(p("2e+116"))), "2e116");
+    assert_eq!(format!("{:6.6}", P(p("2e+116"))), " 2e116");
     assert_eq!(format!("{:6.6}", P(p("1.8e+33"))), "1.8e33");
-    assert_eq!(format!("{:6.6}", P(p("1.7e-13"))), "2e-13");
+    assert_eq!(format!("{:6.6}", P(p("1.7e-13"))), " 2e-13");
     assert_eq!(format!("{:6.6}", P(p("1.4580931e+62"))), "1.5e62");
     assert_eq!(format!("{:6.6}", P(p("1.44471e-07"))), "1.4e-7");
     assert_eq!(format!("{:6.6}", P(p("1.393237e+46"))), "1.4e46");
-    assert_eq!(format!("{:6.6}", P(p("1.39e+295"))), "1e295");
+    assert_eq!(format!("{:6.6}", P(p("1.39e+295"))), " 1e295");
     assert_eq!(format!("{:6.6}", P(p("1.375e+17"))), "1.4e17");
     assert_eq!(format!("{:6.6}", P(p("1.293e+27"))), "1.3e27");
-    assert_eq!(format!("{:6.6}", P(p("1.2041e-21"))), "1e-21");
+    assert_eq!(format!("{:6.6}", P(p("1.2041e-21"))), " 1e-21");
     assert_eq!(format!("{:6.6}", P(p("1e+48"))), "1.0e48");
 }
 #[test]
@@ -4233,18 +4233,18 @@ fn six_6() {
     assert_eq!(format!("{:6.6}", P(p("-inf"))), "-inf  ");
     assert_eq!(format!("{:6.6}", P(p("inf"))), "inf   ");
     assert_eq!(format!("{:6.6}", P(p("0"))), "0.0000");
-    assert_eq!(format!("{:6.6}", P(p("-0.00023816"))), "-2e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.000274"))), "-3e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.00031"))), "-3e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.00038509"))), "-4e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.000552594"))), "-6e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.0006028"))), "-6e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.000719834"))), "-7e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.0007820539"))), "-8e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.000869"))), "-9e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.00089806422"))), "-9e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.0009172"))), "-9e-4");
-    assert_eq!(format!("{:6.6}", P(p("-0.00095719"))), "-1e-3");
+    assert_eq!(format!("{:6.6}", P(p("-0.00023816"))), " -2e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.000274"))), " -3e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.00031"))), " -3e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.00038509"))), " -4e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.000552594"))), " -6e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.0006028"))), " -6e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.000719834"))), " -7e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.0007820539"))), " -8e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.000869"))), " -9e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.00089806422"))), " -9e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.0009172"))), " -9e-4");
+    assert_eq!(format!("{:6.6}", P(p("-0.00095719"))), " -1e-3");
     assert_eq!(format!("{:6.6}", P(p("-0.0060372"))), "-0.006");
     assert_eq!(format!("{:6.6}", P(p("-0.0064726046"))), "-0.006");
     assert_eq!(format!("{:6.6}", P(p("-0.0092191939"))), "-0.009");
@@ -4265,95 +4265,95 @@ fn six_7() {
     assert_eq!(format!("{:6.6}", P(p("-0.68"))), "-0.680");
     assert_eq!(format!("{:6.6}", P(p("-0.68815"))), "-0.688");
     assert_eq!(format!("{:6.6}", P(p("-0.7562"))), "-0.756");
-    assert_eq!(format!("{:6.6}", P(p("-1e+29"))), "-1e29");
+    assert_eq!(format!("{:6.6}", P(p("-1e+29"))), " -1e29");
     assert_eq!(format!("{:6.6}", P(p("-1.064846e-26"))), "-1e-26");
     assert_eq!(format!("{:6.6}", P(p("-1.51624e-234"))), "     0");
     assert_eq!(format!("{:6.6}", P(p("-1.6965898e-119"))), "     0");
     assert_eq!(format!("{:6.6}", P(p("-1.7695e-236"))), "     0");
-    assert_eq!(format!("{:6.6}", P(p("-1.93885e+19"))), "-2e19");
-    assert_eq!(format!("{:6.6}", P(p("-2.31373e+31"))), "-2e31");
+    assert_eq!(format!("{:6.6}", P(p("-1.93885e+19"))), " -2e19");
+    assert_eq!(format!("{:6.6}", P(p("-2.31373e+31"))), " -2e31");
     assert_eq!(format!("{:6.6}", P(p("-2.4527809e-306"))), "     0");
-    assert_eq!(format!("{:6.6}", P(p("-2.6136e-09"))), "-3e-9");
+    assert_eq!(format!("{:6.6}", P(p("-2.6136e-09"))), " -3e-9");
     assert_eq!(format!("{:6.6}", P(p("-2.691e-11"))), "-3e-11");
     assert_eq!(format!("{:6.6}", P(p("-2.819"))), "-2.819");
     assert_eq!(format!("{:6.6}", P(p("-2.8322"))), "-2.832");
-    assert_eq!(format!("{:6.6}", P(p("-3e+45"))), "-3e45");
-    assert_eq!(format!("{:6.6}", P(p("-3e-05"))), "-3e-5");
-    assert_eq!(format!("{:6.6}", P(p("-3.05e+25"))), "-3e25");
+    assert_eq!(format!("{:6.6}", P(p("-3e+45"))), " -3e45");
+    assert_eq!(format!("{:6.6}", P(p("-3e-05"))), " -3e-5");
+    assert_eq!(format!("{:6.6}", P(p("-3.05e+25"))), " -3e25");
     assert_eq!(format!("{:6.6}", P(p("-3.108287e+278"))), "-3e278");
-    assert_eq!(format!("{:6.6}", P(p("-3.16584e+41"))), "-3e41");
+    assert_eq!(format!("{:6.6}", P(p("-3.16584e+41"))), " -3e41");
     assert_eq!(format!("{:6.6}", P(p("-3.17e-222"))), "     0");
     assert_eq!(format!("{:6.6}", P(p("-3.2348135"))), "-3.235");
-    assert_eq!(format!("{:6.6}", P(p("-3.465e+22"))), "-3e22");
+    assert_eq!(format!("{:6.6}", P(p("-3.465e+22"))), " -3e22");
     assert_eq!(format!("{:6.6}", P(p("-3.63e-135"))), "     0");
-    assert_eq!(format!("{:6.6}", P(p("-3.72e+45"))), "-4e45");
-    assert_eq!(format!("{:6.6}", P(p("-3.9e+30"))), "-4e30");
+    assert_eq!(format!("{:6.6}", P(p("-3.72e+45"))), " -4e45");
+    assert_eq!(format!("{:6.6}", P(p("-3.9e+30"))), " -4e30");
 }
 #[test]
 fn six_8() {
     assert_eq!(format!("{:6.6}", P(p("-4.2"))), "-4.200");
     assert_eq!(format!("{:6.6}", P(p("-4.208329e-20"))), "-4e-20");
     assert_eq!(format!("{:6.6}", P(p("-4.2888733"))), "-4.289");
-    assert_eq!(format!("{:6.6}", P(p("-4.297e-08"))), "-4e-8");
+    assert_eq!(format!("{:6.6}", P(p("-4.297e-08"))), " -4e-8");
     assert_eq!(format!("{:6.6}", P(p("-4.60469181924042e-321"))), "     0");
-    assert_eq!(format!("{:6.6}", P(p("-4.7142e+36"))), "-5e36");
+    assert_eq!(format!("{:6.6}", P(p("-4.7142e+36"))), " -5e36");
     assert_eq!(format!("{:6.6}", P(p("-4.767"))), "-4.767");
     assert_eq!(format!("{:6.6}", P(p("-4.863526e-20"))), "-5e-20");
-    assert_eq!(format!("{:6.6}", P(p("-4.868e+33"))), "-5e33");
+    assert_eq!(format!("{:6.6}", P(p("-4.868e+33"))), " -5e33");
     assert_eq!(format!("{:6.6}", P(p("-4.96e+247"))), "-5e247");
     assert_eq!(format!("{:6.6}", P(p("-5e-29"))), "-5e-29");
     assert_eq!(format!("{:6.6}", P(p("-5.05e-218"))), "     0");
-    assert_eq!(format!("{:6.6}", P(p("-5.169414e+37"))), "-5e37");
-    assert_eq!(format!("{:6.6}", P(p("-5.20816e-06"))), "-5e-6");
-    assert_eq!(format!("{:6.6}", P(p("-5.263e+21"))), "-5e21");
+    assert_eq!(format!("{:6.6}", P(p("-5.169414e+37"))), " -5e37");
+    assert_eq!(format!("{:6.6}", P(p("-5.20816e-06"))), " -5e-6");
+    assert_eq!(format!("{:6.6}", P(p("-5.263e+21"))), " -5e21");
     assert_eq!(format!("{:6.6}", P(p("-5.4239467e-31"))), "-5e-31");
     assert_eq!(format!("{:6.6}", P(p("-5.44067e-263"))), "     0");
-    assert_eq!(format!("{:6.6}", P(p("-5.543976e+32"))), "-6e32");
+    assert_eq!(format!("{:6.6}", P(p("-5.543976e+32"))), " -6e32");
     assert_eq!(format!("{:6.6}", P(p("-5.56122e-29"))), "-6e-29");
-    assert_eq!(format!("{:6.6}", P(p("-5.6e+35"))), "-6e35");
+    assert_eq!(format!("{:6.6}", P(p("-5.6e+35"))), " -6e35");
     assert_eq!(format!("{:6.6}", P(p("-5.65896e-290"))), "     0");
     assert_eq!(format!("{:6.6}", P(p("-5.71654"))), "-5.717");
     assert_eq!(format!("{:6.6}", P(p("-5.730186e+123"))), "-6e123");
     assert_eq!(format!("{:6.6}", P(p("-5.798598e-21"))), "-6e-21");
     assert_eq!(format!("{:6.6}", P(p("-5.81165e-212"))), "     0");
     assert_eq!(format!("{:6.6}", P(p("-6e-25"))), "-6e-25");
-    assert_eq!(format!("{:6.6}", P(p("-6e-06"))), "-6e-6");
+    assert_eq!(format!("{:6.6}", P(p("-6e-06"))), " -6e-6");
     assert_eq!(format!("{:6.6}", P(p("-6.07e-268"))), "     0");
     assert_eq!(format!("{:6.6}", P(p("-6.074991"))), "-6.075");
     assert_eq!(format!("{:6.6}", P(p("-6.1e+290"))), "-6e290");
 }
 #[test]
 fn six_9() {
-    assert_eq!(format!("{:6.6}", P(p("-6.1206e-06"))), "-6e-6");
-    assert_eq!(format!("{:6.6}", P(p("-6.5986e+45"))), "-7e45");
-    assert_eq!(format!("{:6.6}", P(p("-6.785938e+26"))), "-7e26");
+    assert_eq!(format!("{:6.6}", P(p("-6.1206e-06"))), " -6e-6");
+    assert_eq!(format!("{:6.6}", P(p("-6.5986e+45"))), " -7e45");
+    assert_eq!(format!("{:6.6}", P(p("-6.785938e+26"))), " -7e26");
     assert_eq!(format!("{:6.6}", P(p("-6.8e-30"))), "-7e-30");
     assert_eq!(format!("{:6.6}", P(p("-6.921e-22"))), "-7e-22");
     assert_eq!(format!("{:6.6}", P(p("-7e-57"))), "-7e-57");
-    assert_eq!(format!("{:6.6}", P(p("-7.0915e+22"))), "-7e22");
+    assert_eq!(format!("{:6.6}", P(p("-7.0915e+22"))), " -7e22");
     assert_eq!(format!("{:6.6}", P(p("-7.15407055178125e-321"))), "     0");
-    assert_eq!(format!("{:6.6}", P(p("-7.60733e+45"))), "-8e45");
-    assert_eq!(format!("{:6.6}", P(p("-7.79173e-05"))), "-8e-5");
+    assert_eq!(format!("{:6.6}", P(p("-7.60733e+45"))), " -8e45");
+    assert_eq!(format!("{:6.6}", P(p("-7.79173e-05"))), " -8e-5");
     assert_eq!(format!("{:6.6}", P(p("-8e-26"))), "-8e-26");
-    assert_eq!(format!("{:6.6}", P(p("-8e+20"))), "-8e20");
+    assert_eq!(format!("{:6.6}", P(p("-8e+20"))), " -8e20");
     assert_eq!(format!("{:6.6}", P(p("-8.245e-145"))), "     0");
-    assert_eq!(format!("{:6.6}", P(p("-8.28043e+21"))), "-8e21");
+    assert_eq!(format!("{:6.6}", P(p("-8.28043e+21"))), " -8e21");
     assert_eq!(format!("{:6.6}", P(p("-8.2888989e-25"))), "-8e-25");
     assert_eq!(format!("{:6.6}", P(p("-8.37662e-158"))), "     0");
     assert_eq!(format!("{:6.6}", P(p("-8.38e-30"))), "-8e-30");
     assert_eq!(format!("{:6.6}", P(p("-8.4e-23"))), "-8e-23");
-    assert_eq!(format!("{:6.6}", P(p("-8.5e+25"))), "-9e25");
+    assert_eq!(format!("{:6.6}", P(p("-8.5e+25"))), " -9e25");
     assert_eq!(format!("{:6.6}", P(p("-8.8165e-23"))), "-9e-23");
     assert_eq!(format!("{:6.6}", P(p("-8.821e-20"))), "-9e-20");
     assert_eq!(format!("{:6.6}", P(p("-8.8805774e+129"))), "-9e129");
-    assert_eq!(format!("{:6.6}", P(p("-8.91e+18"))), "-9e18");
+    assert_eq!(format!("{:6.6}", P(p("-8.91e+18"))), " -9e18");
     assert_eq!(format!("{:6.6}", P(p("-9e-19"))), "-9e-19");
     assert_eq!(format!("{:6.6}", P(p("-9.03e-286"))), "     0");
     assert_eq!(format!("{:6.6}", P(p("-9.13"))), "-9.130");
     assert_eq!(format!("{:6.6}", P(p("-9.185594e-120"))), "     0");
     assert_eq!(format!("{:6.6}", P(p("-9.3e-70"))), "-9e-70");
     assert_eq!(format!("{:6.6}", P(p("-9.451309e-30"))), "-9e-30");
-    assert_eq!(format!("{:6.6}", P(p("-9.494134e+65"))), "-9e65");
+    assert_eq!(format!("{:6.6}", P(p("-9.494134e+65"))), " -9e65");
 }
 #[test]
 fn six_10() {
@@ -4391,8 +4391,8 @@ fn six_10() {
 #[test]
 fn six_11() {
     assert_eq!(format!("{:6.6}", P(p("-900000000"))), "-9.0e8");
-    assert_eq!(format!("{:6.6}", P(p("-279358770000"))), "-3e11");
-    assert_eq!(format!("{:6.6}", P(p("-50000000000000"))), "-5e13");
+    assert_eq!(format!("{:6.6}", P(p("-279358770000"))), " -3e11");
+    assert_eq!(format!("{:6.6}", P(p("-50000000000000"))), " -5e13");
 }
 fn _just_opening_brace_many1() {
 }
@@ -4426,7 +4426,7 @@ fn many1_1() {
     assert_eq!(format!("{:30.30}", P(p("24.48179"))), "24.481790000000000162572177942");
     assert_eq!(format!("{:30.30}", P(p("21.123"))), "21.123000000000001108446667786");
     assert_eq!(format!("{:30.30}", P(p("9.95016e+246"))), "9.950159999999999695987719e246");
-    assert_eq!(format!("{:30.30}", P(p("9.8388"))), "9.838800000000000878230821399");
+    assert_eq!(format!("{:30.30}", P(p("9.8388"))), "9.8388000000000008782308213995");
     assert_eq!(format!("{:30.30}", P(p("9.8059e+35"))), "9.8059000000000000650859410e35");
 }
 #[test]
@@ -4764,7 +4764,7 @@ fn many2_1() {
     assert_eq!(format!("{:20.30}", P(p("24.48179"))), "24.481790000000000162572177942");
     assert_eq!(format!("{:20.30}", P(p("21.123"))), "21.123000000000001108446667786");
     assert_eq!(format!("{:20.30}", P(p("9.95016e+246"))), "9.950159999999999695987719e246");
-    assert_eq!(format!("{:20.30}", P(p("9.8388"))), "9.838800000000000878230821399");
+    assert_eq!(format!("{:20.30}", P(p("9.8388"))), "9.8388000000000008782308213995");
     assert_eq!(format!("{:20.30}", P(p("9.8059e+35"))), "9.805900000000000065085941e35");
 }
 #[test]
