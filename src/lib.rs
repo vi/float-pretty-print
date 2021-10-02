@@ -232,9 +232,13 @@ impl Display for PrettyPrintFloat {
                         if DEBUG { eprintln!("Just print zero"); }
                         return write!(fmt, "{:w$}", 0.0, w=width_min);
                     }
-                } else if minimum == width_max || minimum == width_max-1 {
+                } else if minimum == width_max {
                     if DEBUG { eprintln!("Fits just right"); }
                     return write!(fmt, "{}", probe);
+                } else if minimum == width_max-1 {
+                    if DEBUG { eprintln!("Fits almost just right"); }
+                    // Can't increase precision because of we need to add a `.` as well
+                    return write!(fmt, " {}", probe);
                 } else {
                     if DEBUG { eprintln!("There is some space to be more precise"); }
                     let probe2 = format!("{:.p$e}", x, p=(width_max - minimum - 1) );
