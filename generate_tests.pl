@@ -2,6 +2,14 @@
 
 use strict;
 
+
+my $REPL = "./target/debug/examples/repl";
+$REPL=$ENV{"REPL"} if exists $ENV{"REPL"};
+
+if (! -e $REPL) {
+    die "$REPL does not exist"
+}
+
 open N, "<", "numbers.txt";
 
 my @A;
@@ -47,7 +55,7 @@ for my $suite (0 .. $#names) {
         print F "$x";
         close F;
 
-        open E, "cat in.txt | ./target/debug/examples/repl 2> /dev/null|";
+        open E, "cat in.txt | $REPL 2> /dev/null|";
         my $out = join '', <E>;
         close E;
         chomp $out;
