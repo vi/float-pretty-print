@@ -64,6 +64,18 @@ for my $suite (0 .. $#names) {
         }
         $remaining_in_this_chunk -= 1;
 
+        if ($str =~ /^\:(\d+)\.(\d+)$/) {
+            my $minl = $1;
+            my $maxl = $2;
+            my $samplel = length($out);
+            #print STDERR "minl=$minl maxl=$maxl samplel=$samplel\n";
+            if ($samplel > $maxl or $samplel < $minl) {
+                print STDERR "\nError: generated sample \"$out\" for number $x with format $str has length ($samplel) not between $minl and $maxl\n";
+                exit 1;
+            }
+        } else {
+        }
+
         print R "    assert_eq!(format!(\"{$str}\", P(p(\"$x\"))), \"$out\");\n";
 
     }
