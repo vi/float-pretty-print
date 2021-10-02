@@ -118,12 +118,14 @@ impl Display for PrettyPrintFloat {
             };
         }
 
+        let probe_for_medium_mode;
         if c == Medium {
-            let probe = format!("{:.0}", x);
-            let length_of_integer_part = probe.len();
+            probe_for_medium_mode = format!("{:.0}", x);
+            let length_of_integer_part = probe_for_medium_mode.len();
 
             if DEBUG { eprintln!(
-                "Length of integer part is {}, which width_max is {}",
+                "Probe=`{}`; length of integer part is {}, which width_max is {}",
+                probe_for_medium_mode,
                 length_of_integer_part,
                 width_max,
             ); }
@@ -135,7 +137,7 @@ impl Display for PrettyPrintFloat {
                 },
                 l if l + 1 >= width_max => {
                     if DEBUG { eprintln!("Almost too large, checking zeroness"); }
-                    if probe != "0" {
+                    if probe_for_medium_mode != "0" {
                         if DEBUG { eprintln!("Seems to be OK to print as integer"); }
                         // print as integer
                         return write!(fmt, "{:w$.0}", x, w=width_min);
@@ -197,9 +199,18 @@ impl Display for PrettyPrintFloat {
 
             if c == Medium {
                 if DEBUG { eprintln!("Medium mode confirmed"); }
-                // b fits max_width, but may be opportunities to chip off zeroes
-                let b = format!("{:.p$}", x, p=(width_max-1-length_of_integer_part));
+                // b fits max_width, but there may be opportunities to chip off zeroes
+                let mut b = format!("{:.p$}", x, p=(width_max-1-length_of_integer_part));
                 if DEBUG { eprintln!("Intermediate result: {}", &b); }
+                let first_digit_of_probe = probe_for_medium_mode.bytes().into_iter().next();
+                if first_digit_of_probe == Some(b'1') && first_digit_of_probe != b.bytes().into_iter().next() {
+                    if DEBUG { eprintln!("Looks like we have overestimated the integer part size");  }
+
+                    let b2 = format!("{:.p$}", x, p=(width_max-1-length_of_integer_part+1));
+                    if b2.len() <= width_max {
+                        b = b2;
+                    }
+                }
                 let mut end = b.len();
                 if b.contains('.') {
                     loop {
@@ -214,7 +225,11 @@ impl Display for PrettyPrintFloat {
                         end -= 1;
                     }
                 }
-                return write!(fmt, "{}", &b[0..end]);
+                let b = &b[0..end];
+                for _ in b.len()..width_min {
+                    write!(fmt, " ")?;
+                }
+                return write!(fmt, "{}", b);
             }
         }
 
